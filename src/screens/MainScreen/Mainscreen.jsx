@@ -25,10 +25,15 @@ const MainScreen = () => {
       document.body.style.overflowY = "";
     };
   }, [isOpen]);
-  return;
-  <section className="main-screen-mobile">
-    <Loader />
-  </section>;
+  return (
+    <section className="main-screen-mobile">
+      <Loader />
+      <main className="main">
+        <Header isOpen={isOpen} toggleMenu={toggleMenu} />
+        {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
+      </main>
+    </section>
+  );
 };
 
 export default MainScreen;
