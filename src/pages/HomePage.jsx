@@ -3,6 +3,7 @@ import Loader from "../components/Loadingscreen/LoadingScreen.jsx";
 import Mainscreen from "../screens/MainScreen/Mainscreen.jsx";
 import AboutScreen from "../screens/AboutScreen/AboutScreen.jsx";
 import ServicesScreen from "../screens/ServicesScreen/ServicesScreen.jsx";
+import ConsultationScreen from "../screens/ConsultationScreen/ConsultationScreen.jsx";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Mainscreen />
       <AboutScreen />
       <ServicesScreen />
+      <ConsultationScreen />
     </>
   );
 };

@@ -43,7 +43,7 @@ const Menu = (props) => {
               onClick={props.closeMenu}
               className="aside__container-item mt32"
             >
-              Связаться с нами
+              <span className="aside__span"> Связаться с нами </span>
             </button>
           </Slide>
           <div className="contact mt64">
@@ -52,7 +52,7 @@ const Menu = (props) => {
                 +7 (776) 449-04-49
               </a>
             </Slide>
-            <Slide direction="right">
+            <Slide direction="right" className="contact__item mt32">
               <a
                 href="mailto:specialsolutions@info.kz"
                 className="contact__item"

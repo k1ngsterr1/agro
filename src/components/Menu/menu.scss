@@ -20,6 +20,11 @@
     font-size: 37px;
     font-family: $primary-font;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
@@ -30,5 +35,9 @@
     text-decoration: none;
     color: $primary-color;
     font-family: $primary-font;
+    transition: 0.3s ease;
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
