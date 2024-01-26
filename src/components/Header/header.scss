@@ -14,7 +14,7 @@
   }
 
   &__logo {
-    width: clamp(38.5px, 17.99028vw, 154px);
-    height: clamp(26.635px, 12.4460028vw, 106.54px);
+    width: clamp(30.5px, calc(17.523vw - 7px), 143px);
+    height: clamp(19.635px, calc(12.4460028vw - 7px), 99.54px);
   }
 }

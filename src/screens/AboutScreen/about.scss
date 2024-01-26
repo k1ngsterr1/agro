@@ -1,19 +1,29 @@
 @import "../../styles/variables.scss";
 
-.main {
+.about {
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin-top: clamp(16px, 7.47648vw, 64px);
 
   &__content {
     width: 90%;
     font-family: $primary-font;
     font-weight: 700;
     margin: auto;
-    margin-top: clamp(32px, 14.95296vw, 128px);
   }
-  &__text-section {
-    text-align: center;
+  &__company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    padding-bottom: clamp(16px, 7.47648vw, 64px);
+  }
+  __text-section {
     color: $primary-color;
     font-family: $primary-font;
   }
@@ -28,13 +38,12 @@
     transition: 0.3s;
   }
   &__heading {
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: clamp(14px, 6.541919999999999vw, 56px);
+    font-size: clamp(13px, 6.07464vw, 52px);
     line-height: clamp(19.6px, 9.158688vw, 78.4px);
   }
   &__span {
-    color: $secondary-color;
+    color: $primary-color;
   }
   &__paragraph {
     width: 100%;
@@ -42,12 +51,5 @@
     font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
     font-weight: 100;
     line-height: clamp(13.6px, 6.355008vw, 54.4px);
-  }
-  &__field {
-    width: 500px; /* Make the picture take up 100% of the container width */
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: clamp(32px, 14.95296vw, 128px);
   }
 }

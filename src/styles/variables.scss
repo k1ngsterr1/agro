@@ -9,3 +9,48 @@
 .mt70 {
   margin-top: clamp(35px, 16.354799999999997vw, 140px);
 }
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt16 {
+  margin-top: clamp(8px, 3.73824vw, 32px);
+}
+
+.mt48 {
+  margin-top: clamp(24px, 11.21472vw, 96px);
+}
+
+.mt32 {
+  margin-top: clamp(16px, 7.47648vw, 64px);
+}
+
+.mt64 {
+  margin-top: clamp(32px, 14.95296vw, 128px);
+}
+
+//colors
+
+$primary-color: #289225;
+
+$secondary-color: #162e36;
+
+$original-white: #ffffff;
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+$secondary-font: "Ubuntu", sans-serif;
+
+@font-face {
+  font-family: "Gotham pro";
+  src: url(../shared/Gotham/Gotham/gothampro.ttf),
+    url(../shared/Gotham/Gotham/gothampro_blackitalic.ttf)
+      url(../shared/Gotham/Gotham/gothampro_bold.ttf)
+      url(../shared/Gotham/Gotham/gothampro_black.ttf)
+      url(../shared/Gotham/Gotham/gothampro_medium.ttf)
+      url(../shared/Gotham/Gotham/gothampro_bolditalic.ttf);
+}
+
+$primary-font: "Gotham pro";

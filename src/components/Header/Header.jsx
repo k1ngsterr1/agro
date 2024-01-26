@@ -1,10 +1,8 @@
 import React from "react";
 import logo from "..//../assets/logo.svg";
-import Hamburger from "react-hamburger-menu";
+import Hamburger from "hamburger-react";
 
-import { Link } from "react-scroll";
-
-import "..//Header/header.scss";
+import "../Header/header.scss";
 
 const Header = (props) => {
   return (
@@ -14,7 +12,7 @@ const Header = (props) => {
           <img src={logo} alt="logo" className="header__logo" />
           <Hamburger
             className="header__hamburger"
-            color="#025A42"
+            color="#289225"
             toggled={props.isOpen}
             toggle={props.toggleMenu}
           />

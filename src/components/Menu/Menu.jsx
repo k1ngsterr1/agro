@@ -1,50 +1,68 @@
 import React from "react";
-import Hamburger from "react-hamburger-menu";
+import Hamburger from "hamburger-react";
 import { Link as ScrollLink, Link } from "react-scroll";
 import { Fade, Slide } from "react-awesome-reveal";
 import "./menu.scss";
 
-import logo from "..//../assets/logo.svg";
-
 const Menu = (props) => {
   return (
-    <Slide className="menu" direction="down" triggerOnce>
-      <nav className="menu__links">
-        <div className="menu__hamburger">
-          <Hamburger
-            color="#289225"
-            toggled={props.isOpen}
-            toggle={props.toggleMenu}
-          />
+    <Slide direction="right" duration={1000}>
+      <aside className="aside">
+        <div className="aside__container mt48">
+          <Slide direction="right">
+            <button onClick={props.closeMenu} className="aside__container-item">
+              Главная
+            </button>
+          </Slide>
+          <Slide direction="right">
+            <button
+              onClick={props.closeMenu}
+              className="aside__container-item mt32"
+            >
+              О компании
+            </button>
+          </Slide>
+          <Slide direction="right">
+            <button
+              onClick={props.closeMenu}
+              className="aside__container-item mt32"
+            >
+              Услуги
+            </button>
+          </Slide>
+          <Slide direction="right">
+            <button
+              onClick={props.closeMenu}
+              className="aside__container-item mt32"
+            >
+              Портфолио
+            </button>
+          </Slide>
+          <Slide direction="right">
+            <button
+              onClick={props.closeMenu}
+              className="aside__container-item mt32"
+            >
+              Связаться с нами
+            </button>
+          </Slide>
+          <div className="contact mt64">
+            <Slide direction="right">
+              <a href="tel:+77764490449" className="contact__item">
+                +7 (776) 449-04-49
+              </a>
+            </Slide>
+            <Slide direction="right">
+              <a
+                href="mailto:specialsolutions@info.kz"
+                className="contact__item"
+              >
+                specialsolutions@info.kz
+              </a>
+            </Slide>
+          </div>
         </div>
-        <img src={logo} alt="logo" className="menu__logo" />
-        <ScrollLink onClick={props.closeMenu} className="menu__item" smooth>
-          <Fade direction="right" delay={200}>
-            Главная
-          </Fade>
-        </ScrollLink>
-        <ScrollLink onClick={props.closeMenu} className="menu__item" smooth>
-          <Fade direction="left" delay={300}>
-            О компании
-          </Fade>
-        </ScrollLink>
-        <ScrollLink onClick={props.closeMenu} className="menu__item" smooth>
-          <Fade direction="right" delay={400}>
-            Услуги
-          </Fade>
-        </ScrollLink>
-        <ScrollLink onClick={props.closeMenu} className="menu__item" smooth>
-          <Fade direction="left" delay={500}>
-            Контакты
-          </Fade>
-        </ScrollLink>
-
-        <ScrollLink onClick={props.closeMenu} className="menu__item" smooth>
-          <Fade direction="left" delay={600}>
-            Связаться с нами
-          </Fade>
-        </ScrollLink>
-      </nav>
+      </aside>
     </Slide>
   );
 };
