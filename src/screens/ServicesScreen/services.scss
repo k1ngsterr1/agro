@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.about {
+.services {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -8,13 +8,14 @@
   &__content {
     width: 90%;
     font-family: $primary-font;
-    font-weight: 700;
     margin: auto;
+    margin-top: clamp(32px, 14.95296vw, 128px);
   }
 
   &__text-section {
     color: $secondary-color;
     font-family: $primary-font;
+    text-align: right;
   }
   &__mini-text {
     font-size: clamp(8px, 3.73824vw, 32px);
@@ -30,9 +31,10 @@
     font-weight: 700;
     font-size: clamp(13px, 6.07464vw, 52px);
     line-height: clamp(19.6px, 9.158688vw, 78.4px);
+    color: $primary-color;
   }
   &__span {
-    color: $primary-color;
+    color: $secondary-color;
   }
   &__paragraph {
     width: 100%;
@@ -41,21 +43,8 @@
     font-weight: 100;
     line-height: clamp(13.6px, 6.355008vw, 54.4px);
   }
-  &__statistics {
-    color: $secondary-color;
-    font-family: $primary-font;
-  }
-  &__number {
-    color: $primary-color;
-    font-weight: 700;
-    font-size: clamp(22.5px, 10.5138vw, 90px);
-  }
-  &__description {
-    font-weight: 400;
-    font-size: clamp(9px, 4.20552vw, 36px);
-  }
-  &__button {
-    display: flex;
-    align-items: flex-start;
+  &__box {
+    @extend %flex-center;
+    flex-direction: column;
   }
 }

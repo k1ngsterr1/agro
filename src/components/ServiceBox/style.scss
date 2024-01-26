@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.servicebox {
+  @extend %flex-center;
+  padding: 20px;
+  flex-direction: column;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 0.3s ease;
+  margin-top: clamp(16px, 7.47648vw, 64px);
+
+  svg {
+    margin-top: clamp(14.965px, 6.9928452vw, 59.86px);
+  }
+
+  p {
+    margin-top: clamp(8.105px, 3.7873044vw, 32.42px);
+    color: $secondary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: clamp(11.5px, 5.37372vw, 46px);
+  }
+  dt {
+    width: 94%;
+    margin-top: clamp(6.485px, 3.0303108vw, 25.94px);
+    color: $secondary-color;
+    text-align: center;
+    line-height: clamp(10.2px, 4.766255999999999vw, 40.8px);
+    font-size: clamp(7.5px, 3.5046vw, 30px);
+    font-family: $primary-font;
+  }
+  //   .team-picture {
+  //     width: clamp(22.5px, 10.5138vw, 90px);
+  //     margin-top: clamp(16.3px, 7.616664vw, 65.2px);
+  //   }
+}
+
+.servicebox:hover {
+  background-color: $primary-color;
+
+  svg path {
+    fill: $original-white;
+  }
+  p {
+    color: $original-white;
+  }
+  dt {
+    color: $original-white;
+  }
+  svg g circle {
+    fill: $original-white;
+  }
+  .arrow g path {
+    fill: $primary-color;
+  }
+}

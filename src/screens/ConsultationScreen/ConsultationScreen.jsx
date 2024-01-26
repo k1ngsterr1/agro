@@ -1,10 +1,10 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { Link } from "react-scroll";
-import "../AboutScreen/about.scss";
+import "../ConsultationScreen/about.scss";
 import ButtonCommunicate from "../../components/Buttons/ButtonCommunicate/ButtonCommunicate";
 
-function AboutScreen() {
+function ConsultationScreen() {
   return (
     <div className="about" id="about">
       <div className="about__content mt64">
@@ -34,45 +34,9 @@ function AboutScreen() {
             </p>
           </Slide>
         </div>
-        <div className="about__statistics">
-          <Slide direction="right" triggerOnce>
-            <dl className="about__number mt32">600</dl>
-            <dt className="about__description mt8">
-              Lorem ipsum dolor sit amet,
-            </dt>
-          </Slide>
-          <Slide direction="right" triggerOnce>
-            <dl className="about__number mt32">600</dl>
-            <dt className="about__description mt8">
-              Lorem ipsum dolor sit amet,
-            </dt>
-          </Slide>
-          <Slide direction="right" triggerOnce>
-            <dl className="about__number mt32">600</dl>
-            <dt className="about__description mt8">
-              Lorem ipsum dolor sit amet,
-            </dt>
-          </Slide>
-          <Slide direction="right" triggerOnce>
-            <dl className="about__number mt32">600</dl>
-            <dt className="about__description mt8">
-              Lorem ipsum dolor sit amet,
-            </dt>
-          </Slide>
-        </div>
-        <div className="about__button mt32">
-          <Link smooth to="#">
-            <Slide direction="right" triggerOnce>
-              <ButtonCommunicate
-                text={"Связаться с нами"}
-                className={"basic"}
-              />
-            </Slide>
-          </Link>
-        </div>
       </div>
     </div>
   );
 }
 
-export default AboutScreen;
+export default ConsultationScreen;

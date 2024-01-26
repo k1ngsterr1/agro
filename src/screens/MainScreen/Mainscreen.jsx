@@ -60,7 +60,7 @@ const MainScreen = () => {
               </Fade>
             </Link>
           </div>
-          <img src={Field} alt="icon" className="main__field" />
+          {/* <img src={Field} alt="icon" className="main__field" /> */}
         </div>
       </main>
     </section>

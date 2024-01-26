@@ -1,0 +1,47 @@
+@import "../../../styles/variables.scss";
+
+.basic {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $primary-color;
+  border: none;
+  padding: clamp(7.5px, 3.5046vw, 30px);
+  width: clamp(125px, 58.41vw, 500px);
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: clamp(10px, 4.6728vw, 40px);
+  text-align: center;
+  transition: 0.3s ease;
+  color: $original-white;
+  cursor: pointer;
+}
+
+.basic:hover {
+  background-color: #237e1f;
+}
+
+// .outline {
+//   margin: auto;
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   margin-top: clamp(32px, 14.95296vw, 128px);
+//   background-color: $original-white;
+//   border: none;
+//   border: 3px solid $primary-color;
+//   padding: clamp(7.5px, 3.5046vw, 30px);
+//   width: clamp(125px, 58.41vw, 500px);
+//   font-family: $secondary-font;
+//   font-weight: 600;
+//   font-size: clamp(10px, 4.6728vw, 40px);
+//   text-align: center;
+//   transition: 0.3s ease;
+//   color: $primary-color;
+// }
+
+// .outline:hover {
+//   background-color: $primary-color;
+//   color: $original-white;
+// }
