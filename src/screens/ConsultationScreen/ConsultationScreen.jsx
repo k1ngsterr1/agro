@@ -3,6 +3,7 @@ import { Slide } from "react-awesome-reveal";
 import { Link } from "react-scroll";
 import "../ConsultationScreen/consultation.scss";
 import ButtonCommunicate from "../../components/Buttons/ButtonCommunicate/ButtonCommunicate";
+import Footer from "../../components/Footer/Footer";
 
 function ConsultationScreen() {
   return (
@@ -59,6 +60,7 @@ function ConsultationScreen() {
           </Slide>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

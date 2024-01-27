@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+
+footer {
+  width: 100%;
+  margin-top: clamp(32px, 14.95296vw, 128px);
+}
+
+.footer_m {
+  padding-bottom: clamp(16px, 7.47648vw, 64px);
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: clamp(32px, 14.95296vw, 128px);
+
+  &__logo {
+    width: clamp(61px, 28.50408vw, 244px);
+    height: clamp(49.5px, 23.13036vw, 198px);
+    margin-bottom: clamp(7.5px, 3.5046vw, 30px);
+  }
+
+  &__text {
+    font-family: $primary-font;
+    font-weight: 400;
+    line-height: clamp(14.22px, 6.6447216vw, 56.88px);
+    color: $original-white;
+    text-align: center;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    cursor: pointer;
+  }
+
+  &__btn {
+    width: clamp(125px, 58.41vw, 500px);
+    cursor: pointer;
+    text-align: center;
+    padding: clamp(7.5px, 3.5046vw, 30px);
+    background-color: $original-white;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    font-weight: 500;
+    margin-top: clamp(16px, 7.47648vw, 64px);
+  }
+  &__sparklogo {
+    width: clamp(105px, 49.0644vw, 420px);
+    height: clamp(34.5px, 16.12116vw, 138px);
+    margin-top: clamp(32px, 14.95296vw, 128px);
+    cursor: pointer;
+  }
+}
