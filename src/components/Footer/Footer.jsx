@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-
+import ButtonCommunicate from "../../components/Buttons/ButtonCommunicate/ButtonCommunicate";
 import "../Footer/footer.scss";
 
 import footerlogo from "../../assets/footerlogo.svg";

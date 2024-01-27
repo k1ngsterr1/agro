@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+.form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: clamp(32px, 14.95296vw, 128px);
+  margin-top: clamp(16px, 7.47648vw, 64px);
+
+  &__error {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 16px;
+    color: red;
+  }
+
+  &__input,
+  &__select {
+    position: relative;
+    text-align: left;
+    color: #cbcbcb;
+    padding: clamp(5px, 2.3364vw, 20px);
+    width: clamp(150px, 70.092vw, 600px);
+    margin-bottom: clamp(16px, 7.47648vw, 64px);
+    font-family: $primary-font;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    line-height: clamp(16px, 7.47648vw, 64px);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: 0.3s ease;
+
+    &:focus {
+      color: $primary-color;
+      border-color: $primary-color;
+      outline: 0;
+      outline-offset: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-top-color: #cbcbcb;
+      transform: translateY(-50%);
+      pointer-events: none;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__select {
+    background-color: #fff;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-top-color: #cbcbcb;
+      transform: translateY(-50%);
+      pointer-events: none;
+      transition: transform 0.3s ease;
+    }
+
+    &:focus::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__select-option {
+    font-family: $secondary-color;
+    color: #cbcbcb;
+  }
+}

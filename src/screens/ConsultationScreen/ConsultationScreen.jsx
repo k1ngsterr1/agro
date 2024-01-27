@@ -2,8 +2,8 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { Link } from "react-scroll";
 import "../ConsultationScreen/consultation.scss";
-import ButtonCommunicate from "../../components/Buttons/ButtonCommunicate/ButtonCommunicate";
 import Footer from "../../components/Footer/Footer";
+import Form from "../../components/Form/Form";
 
 function ConsultationScreen() {
   return (
@@ -29,13 +29,7 @@ function ConsultationScreen() {
             </p>
           </Slide>
         </div>
-        <div className="consultation__button mt32">
-          <Link smooth to="#">
-            <Slide direction="right" triggerOnce>
-              <ButtonCommunicate text={"Отправить"} className={"basic"} />
-            </Slide>
-          </Link>
-        </div>
+        <Form></Form>
         <div className="consultation__contacts">
           <Slide
             direction="right"
