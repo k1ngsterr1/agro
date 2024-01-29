@@ -10,26 +10,35 @@ const Menu = (props) => {
       <aside className="aside">
         <div className="aside__container mt48">
           <Slide direction="right">
-            <button onClick={props.closeMenu} className="aside__container-item">
+            <Link
+              onClick={props.closeMenu}
+              className="aside__container-item"
+              smooth
+              to="about"
+              duration={500}
+            >
               Главная
-            </button>
+            </Link>
           </Slide>
-          <Slide direction="right">
-            <button
-              onClick={props.closeMenu}
-              className="aside__container-item mt32"
-            >
-              О компании
-            </button>
-          </Slide>
-          <Slide direction="right">
-            <button
-              onClick={props.closeMenu}
-              className="aside__container-item mt32"
-            >
-              Услуги
-            </button>
-          </Slide>
+
+          <Link
+            onClick={props.closeMenu}
+            className="aside__container-item mt32"
+            smooth
+            to="about"
+            duration={500}
+          >
+            <Slide direction="right">О компании</Slide>
+          </Link>
+
+          <Link
+            onClick={props.closeMenu}
+            className="aside__container-item mt32"
+            smooth
+            to="services"
+          >
+            <Slide direction="right">Услуги</Slide>
+          </Link>
           <Slide direction="right">
             <button
               onClick={props.closeMenu}

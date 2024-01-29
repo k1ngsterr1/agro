@@ -1,5 +1,9 @@
 @import "../../styles/variables.scss";
 
+.pc-screen {
+  display: none;
+}
+
 .header {
   width: 90%;
   height: auto;
@@ -16,5 +20,65 @@
   &__logo {
     width: clamp(30.5px, calc(17.523vw - 7px), 143px);
     height: clamp(19.635px, calc(12.4460028vw - 7px), 99.54px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-screen {
+    display: none;
+  }
+
+  .pc-screen {
+    display: flex;
+  }
+
+  .header-pc {
+    width: 86.6%;
+    margin: auto;
+    margin-top: clamp(25px, 2.604vw, 100px);
+
+    &__logo {
+      width: clamp(69px, 7.1870400000000005vw, 276px);
+      height: clamp(47.495px, 4.9470792vw, 189.98px);
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__text-s {
+        display: flex;
+        text-indent: clamp(20px, 2.0832vw, 80px);
+      }
+
+      &__text {
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: clamp(10.5px, 1.09368vw, 42px);
+        cursor: pointer;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      &__button {
+        background-color: $primary-color;
+        border: none;
+        width: 300px;
+        padding: clamp(7.5px, 0.7812vw, 30px);
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: clamp(9.5px, 4.439159999999999vw, 38px);
+        text-align: center;
+        transition: 0.3s ease;
+        color: $original-white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #237e1f;
+        }
+      }
+    }
   }
 }

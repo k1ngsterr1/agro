@@ -61,7 +61,7 @@ function AboutScreen() {
           </Slide>
         </div>
         <div className="about__button mt32">
-          <Link smooth to="#">
+          <Link smooth to="consultation">
             <Slide direction="right" triggerOnce>
               <ButtonCommunicate
                 text={"Связаться с нами"}

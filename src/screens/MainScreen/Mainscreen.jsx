@@ -29,7 +29,7 @@ const MainScreen = () => {
 
   return (
     <section className="main-screen-mobile">
-      <main className="main">
+      <main className="main" id="main">
         <Header isOpen={isOpen} toggleMenu={toggleMenu} />
         {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
         <div className="main__content">
@@ -54,14 +54,14 @@ const MainScreen = () => {
             </Fade>
           </div>
           <div className="main__buttons">
-            <Link smooth to="#">
+            <Link smooth to="about">
               <Fade direction="up" delay={400} triggerOnce>
                 <ButtonMore text={"Подробнее"} className={"outline"} />
               </Fade>
             </Link>
           </div>
-          {/* <img src={Field} alt="icon" className="main__field" /> */}
         </div>
+        <img src={Field} alt="icon" className="main__field" />
       </main>
     </section>
   );

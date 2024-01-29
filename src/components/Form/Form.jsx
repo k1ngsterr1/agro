@@ -34,7 +34,7 @@ const Form = () => {
             isError={Boolean(errors.full_name)}
           />
           {errors.full_name && (
-            <p class="form__error">{errors.full_name.message}</p>
+            <span class="form__error">{errors.full_name.message}</span>
           )}
         </div>
         <div className="form__card">
@@ -49,7 +49,7 @@ const Form = () => {
             })}
             className="form__input"
             name="phone_number"
-            placeholder="Ваш телефона"
+            placeholder="Ваш телефон"
             isError={Boolean(errors.phone_number)}
           />
           {errors.phone_number && (

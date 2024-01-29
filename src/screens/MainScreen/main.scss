@@ -44,10 +44,9 @@
     line-height: clamp(13.6px, 6.355008vw, 54.4px);
   }
   &__field {
-    width: 500px; /* Make the picture take up 100% of the container width */
-    height: 450px;
+    margin-top: clamp(24px, 11.21472vw, 96px);
+    height: clamp(200px, 93.45599999999999vw, 800px);
     background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: clamp(32px, 14.95296vw, 128px);
+    background-repeat: no-repeat; /* Высота изображения равна высоте видимого экрана */
   }
 }

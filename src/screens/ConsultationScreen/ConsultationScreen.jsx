@@ -29,7 +29,9 @@ function ConsultationScreen() {
             </p>
           </Slide>
         </div>
-        <Form></Form>
+        <Slide direction="right" triggerOnce>
+          <Form></Form>
+        </Slide>
         <div className="consultation__contacts">
           <Slide
             direction="right"
