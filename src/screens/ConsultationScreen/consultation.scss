@@ -62,3 +62,13 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .consultation {
+    width: 86.6%;
+    margin: auto;
+    &__content {
+      margin-top: clamp(70px, 7.2912vw, 280px);
+    }
+  }
+}

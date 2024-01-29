@@ -55,3 +55,47 @@
     fill: $primary-color;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .servicebox {
+    width: clamp(210px, 21.8736vw, 840px);
+    height: clamp(168.5px, 17.55096vw, 674px);
+    flex-direction: column;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.05);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s ease;
+    margin-top: clamp(32px, 3.33312vw, 128px);
+    margin-left: clamp(67.5px, 7.0308vw, 270px);
+
+    .team-picture {
+      position: relative;
+      right: clamp(75px, 7.812vw, 300px);
+      bottom: clamp(10px, 1.0416vw, 40px);
+    }
+    svg {
+      position: relative;
+      right: clamp(75px, 7.812vw, 300px);
+      margin-top: clamp(16px, 1.66656vw, 64px);
+    }
+
+    p {
+      position: relative;
+      right: clamp(32px, 3.33312vw, 128px);
+      margin-top: clamp(3px, 0.31248vw, 12px);
+      color: $secondary-color;
+      font-family: $primary-font;
+      font-weight: 700;
+      font-size: clamp(12.5px, 1.302vw, 50px);
+    }
+    dt {
+      width: 90%;
+      text-align: left;
+      margin-top: clamp(8px, 0.83328vw, 32px);
+      color: $secondary-color;
+      line-height: clamp(10.2px, 1.062432vw, 40.8px);
+      font-size: clamp(7.5px, 0.7812vw, 30px);
+      font-family: $primary-font;
+    }
+  }
+}

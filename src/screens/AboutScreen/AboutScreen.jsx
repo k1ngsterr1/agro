@@ -82,7 +82,7 @@ function AboutScreen() {
             </Fade>
             <Fade direction="up" triggerOnce>
               <h1 className="about-pc__content__heading">
-                Огромный опыт на сельскохозяйственных культур
+                <span>Огромный опыт </span>на сельскохозяйственных культур
               </h1>
             </Fade>
             <Fade direction="up" triggerOnce>

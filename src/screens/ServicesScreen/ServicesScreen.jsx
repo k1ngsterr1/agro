@@ -14,7 +14,7 @@ function ServicesScreen() {
             <p className="services__mini-text">Услуги</p>
           </Slide>
           <Slide direction="left" triggerOnce>
-            <h1 className="services__heading mt8">
+            <h1 className="services__heading">
               <span className="services__span">
                 <strong>Наши </strong>
               </span>
@@ -22,53 +22,61 @@ function ServicesScreen() {
             </h1>
           </Slide>
           <Slide direction="left" triggerOnce>
-            <p className="services__paragraph mt32">
+            <p className="services__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna
             </p>
           </Slide>
         </div>
         <div className="services__box">
-          <Fade direction="up" triggerOnce>
-            <ServiceBox
-              text={
-                "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
-              }
-              svg={teampicture}
-              caption={"Сопровождение"}
-              className={"servicebox"}
-            ></ServiceBox>
-          </Fade>
-          <Fade direction="up" delay={200} triggerOnce>
-            <ServiceBox
-              text={
-                "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
-              }
-              svg={teampicture}
-              caption={"Сопровождение"}
-              className={"servicebox"}
-            ></ServiceBox>
-          </Fade>
-          <Fade direction="up" delay={300} triggerOnce>
-            <ServiceBox
-              text={
-                "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
-              }
-              svg={teampicture}
-              caption={"Сопровождение"}
-              className={"servicebox"}
-            ></ServiceBox>
-          </Fade>
-          <Fade direction="up" delay={400} triggerOnce>
-            <ServiceBox
-              text={
-                "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
-              }
-              svg={teampicture}
-              caption={"Сопровождение"}
-              className={"servicebox"}
-            ></ServiceBox>
-          </Fade>
+          <div className="service__box-item">
+            <Fade direction="up" triggerOnce>
+              <ServiceBox
+                text={
+                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                }
+                svg={teampicture}
+                caption={"Сопровождение"}
+                className={"servicebox"}
+              ></ServiceBox>
+            </Fade>
+          </div>
+          <div className="service__box-item">
+            <Fade direction="up" triggerOnce>
+              <ServiceBox
+                text={
+                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                }
+                svg={teampicture}
+                caption={"Сопровождение"}
+                className={"servicebox"}
+              ></ServiceBox>
+            </Fade>
+          </div>
+          <div className="service__box-item">
+            <Fade direction="up" delay={300} triggerOnce>
+              <ServiceBox
+                text={
+                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                }
+                svg={teampicture}
+                caption={"Сопровождение"}
+                className={"servicebox"}
+              ></ServiceBox>
+            </Fade>
+          </div>
+          <div className="service__box-odd">
+            <Fade direction="up" delay={400} triggerOnce>
+              <ServiceBox
+                text={
+                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                }
+                svg={teampicture}
+                caption={"Сопровождение"}
+                className={"servicebox"}
+              ></ServiceBox>
+            </Fade>
+          </div>
         </div>
       </div>
     </div>

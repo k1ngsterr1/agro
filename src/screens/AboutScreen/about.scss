@@ -77,9 +77,7 @@
   .about-pc {
     width: 86.6%;
     margin: auto;
-    display: flex;
     &__content {
-      width: 100%;
       margin-top: clamp(182px, 18.95712vw, 728px);
 
       &__text-section {
@@ -102,6 +100,9 @@
         font-size: clamp(24px, 2.49984vw, 96px);
         line-height: clamp(32px, 3.33312vw, 128px);
         margin-top: clamp(8px, 0.83328vw, 32px);
+        span {
+          color: $primary-color;
+        }
       }
       &__paragraph {
         width: 36%;
@@ -119,7 +120,7 @@
         justify-content: right;
         position: relative;
         right: clamp(177.5px, 18.488400000000002vw, 710px);
-        bottom: clamp(117.5px, 12.2388vw, 470px);
+        bottom: clamp(127.5px, 13.2804vw, 510px);
       }
       &__statistics {
         color: $secondary-color;
