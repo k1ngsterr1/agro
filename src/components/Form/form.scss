@@ -13,7 +13,7 @@
   &__error {
     font-family: $primary-font;
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(8px, 3.73824vw, 32px);
     color: red;
   }
 
@@ -41,47 +41,74 @@
       outline: 0;
       outline-offset: 0;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      width: 0;
-      height: 0;
-      border: 6px solid transparent;
-      border-top-color: #cbcbcb;
-      transform: translateY(-50%);
-      pointer-events: none;
-      transition: transform 0.3s ease;
-    }
   }
 
   &__select {
     background-color: #fff;
     cursor: pointer;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      width: 0;
-      height: 0;
-      border: 6px solid transparent;
-      border-top-color: #cbcbcb;
-      transform: translateY(-50%);
-      pointer-events: none;
-      transition: transform 0.3s ease;
-    }
-
-    &:focus::after {
-      transform: translateY(-50%) rotate(180deg);
-    }
   }
 
   &__select-option {
     font-family: $secondary-color;
     color: #cbcbcb;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: clamp(32px, 14.95296vw, 128px);
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    width: 100%;
+    height: auto;
+
+    &__card {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__input {
+      text-align: left;
+      color: #cbcbcb;
+      padding: clamp(9px, 0.93744vw, 36px);
+      font-family: $primary-font;
+      font-size: clamp(10px, 1.0416vw, 40px);
+      line-height: clamp(16px, 1.66656vw, 64px);
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      transition: 0.3s ease;
+      height: auto;
+      margin-right: clamp(20px, 2.0832vw, 80px);
+      &-error {
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: clamp(7px, 0.72912vw, 28px);
+        color: red;
+      }
+    }
+    &__select {
+      text-align: left;
+      color: #cbcbcb;
+      padding: clamp(9px, 0.93744vw, 36px);
+      font-family: $primary-font;
+      font-size: clamp(10px, 1.0416vw, 40px);
+      line-height: clamp(16px, 1.66656vw, 64px);
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      transition: 0.3s ease;
+      height: auto;
+      margin-right: clamp(20px, 2.0832vw, 80px);
+    }
+    .mobile-btn {
+      display: none;
+    }
+    .pc-btn {
+      display: flex;
+    }
   }
 }

@@ -4,17 +4,18 @@ import { Link } from "react-scroll";
 import "../ConsultationScreen/consultation.scss";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
+import Field from "../../assets/agro.webp";
 
 function ConsultationScreen() {
   return (
     <div className="consultation" id="consultation">
-      <div className="consultation__content mt64">
+      <div className="consultation__content">
         <div className="consultation__text-section">
           <Slide direction="right" triggerOnce>
             <p className="consultation__mini-text">Контакты</p>
           </Slide>
           <Slide direction="right" triggerOnce>
-            <h1 className="consultation__heading mt8">
+            <h1 className="consultation__heading">
               <span className="consultation__span">
                 <strong>Получить </strong>
               </span>
@@ -22,16 +23,16 @@ function ConsultationScreen() {
             </h1>
           </Slide>
           <Slide direction="right" triggerOnce>
-            <p className="consultation__paragraph mt32">
+            <p className="consultation__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              eiusmod tempor incididunt ut labore et dolore magna
             </p>
           </Slide>
         </div>
         <Slide direction="right" triggerOnce>
           <Form></Form>
         </Slide>
+        <img src={Field} alt="" className="field-picture-pc" />
         <div className="consultation__contacts">
           <Slide
             direction="right"

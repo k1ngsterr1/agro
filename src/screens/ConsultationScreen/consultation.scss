@@ -48,7 +48,7 @@
     align-items: flex-start;
   }
   &__contacts {
-    margin-top: 32px;
+    margin-top: clamp(16px, 7.47648vw, 64px);
     text-align: left;
   }
   &__contact {
@@ -61,14 +61,78 @@
       color: $secondary-color;
     }
   }
+  .field-picture-pc {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .consultation {
     width: 86.6%;
     margin: auto;
+    margin-top: clamp(80px, 8.3328vw, 320px);
     &__content {
-      margin-top: clamp(70px, 7.2912vw, 280px);
+      font-family: $primary-font;
+      font-weight: 700;
+      margin: auto;
+    }
+    &__text-section {
+      color: $secondary-color;
+      font-family: $primary-font;
+      text-align: left;
+    }
+    &__mini-text {
+      font-size: clamp(9px, 0.93744vw, 36px);
+      font-weight: 100;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+    &__mini-text:hover {
+      color: $primary-color;
+      transition: 0.3s;
+    }
+    &__heading {
+      margin-top: clamp(8px, 0.83328vw, 32px);
+      font-weight: 700;
+      font-size: clamp(24px, 2.49984vw, 96px);
+      color: $primary-color;
+    }
+    &__span {
+      color: $secondary-color;
+    }
+    &__paragraph {
+      width: 30%;
+      margin-top: clamp(16px, 1.66656vw, 64px);
+      color: $secondary-color;
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+      font-weight: 100;
+      line-height: clamp(21px, 2.18736vw, 84px);
+    }
+    &__button {
+      display: flex;
+      align-items: flex-start;
+    }
+    &__contacts {
+      margin-top: 32px;
+      text-align: left;
+    }
+    &__contact {
+      font-size: 24px;
+      text-decoration: none;
+      color: $primary-color;
+      font-family: $primary-font;
+      transition: 0.3s ease;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    .field-picture-pc {
+      display: flex;
+      width: 908px;
+      height: 800px;
+      position: relative;
+      left: 1000px;
+      bottom: 827px;
     }
   }
 }
