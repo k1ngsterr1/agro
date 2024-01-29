@@ -1,5 +1,9 @@
 @import "../../styles/variables.scss";
 
+.about-pc {
+  display: none;
+}
+
 .about {
   margin: auto;
   display: flex;
@@ -62,19 +66,28 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .about {
-    width: 100%;
+  .about-mob {
+    display: none;
+  }
+
+  .about-pc {
+    display: flex;
+  }
+
+  .about-pc {
+    width: 86.6%;
     margin: auto;
+    display: flex;
     &__content {
-      width: 86.6%;
-      margin-top: clamp(32px, 14.95296vw, 128px);
+      width: 100%;
+      margin-top: clamp(182px, 18.95712vw, 728px);
 
       &__text-section {
         color: $secondary-color;
         font-family: $primary-font;
       }
       &__mini-text {
-        font-size: clamp(8px, 3.73824vw, 32px);
+        font-size: clamp(9px, 0.93744vw, 36px);
         font-weight: 100;
         color: $secondary-color;
         cursor: pointer;
@@ -84,20 +97,48 @@
         transition: 0.3s;
       }
       &__heading {
+        width: 55%;
         font-weight: 700;
-        font-size: clamp(13px, 6.07464vw, 52px);
-        line-height: clamp(19.6px, 9.158688vw, 78.4px);
-      }
-      &__span {
-        color: $primary-color;
+        font-size: clamp(24px, 2.49984vw, 96px);
+        line-height: clamp(32px, 3.33312vw, 128px);
+        margin-top: clamp(8px, 0.83328vw, 32px);
       }
       &__paragraph {
-        width: 100%;
-        text-align: right;
+        width: 36%;
+        position: relative;
+        left: clamp(525px, 54.684000000000005vw, 2100px);
+        bottom: clamp(110px, 11.457600000000001vw, 440px);
         color: $secondary-color;
-        font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+        font-size: clamp(10.5px, 1.09368vw, 42px);
         font-weight: 100;
-        line-height: clamp(13.6px, 6.355008vw, 54.4px);
+        line-height: clamp(21px, 2.18736vw, 84px);
+      }
+
+      &__button {
+        display: flex;
+        justify-content: right;
+        position: relative;
+        right: clamp(177.5px, 18.488400000000002vw, 710px);
+        bottom: clamp(117.5px, 12.2388vw, 470px);
+      }
+      &__statistics {
+        color: $secondary-color;
+        font-family: $primary-font;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        bottom: clamp(65px, 6.7704vw, 260px);
+      }
+      &__number {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: clamp(22.5px, 2.3436vw, 90px);
+      }
+      &__description {
+        font-weight: 400;
+        font-size: clamp(9px, 0.93744vw, 36px);
+        margin-top: clamp(4px, 0.41664vw, 16px);
       }
     }
   }

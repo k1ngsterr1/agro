@@ -30,6 +30,12 @@
   margin-top: clamp(32px, 14.95296vw, 128px);
 }
 
+// pc-margin-top
+
+.mt32-pc {
+  margin-top: clamp(16px, 1.66656vw, 64px);
+}
+
 //colors
 
 $primary-color: #289225;

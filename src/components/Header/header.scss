@@ -50,7 +50,7 @@
       &__text-s {
         display: flex;
         text-indent: clamp(20px, 2.0832vw, 80px);
-        margin-left: clamp(150px, 70.092vw, 600px);
+        margin-left: clamp(285px, 29.6856vw, 1140px);
       }
 
       &__text {
@@ -67,9 +67,9 @@
         background-color: $primary-color;
         border: none;
         width: clamp(130px, 13.5408vw, 520px);
-        padding: clamp(7.5px, 0.7812vw, 30px);
+        padding: clamp(7px, 0.72912vw, 28px);
         font-family: $secondary-font;
-        font-size: clamp(5px, 2.3364vw, 20px);
+        font-size: clamp(10px, 1.0416vw, 40px);
         transition: 0.3s ease;
         color: $original-white;
         cursor: pointer;
