@@ -38,22 +38,20 @@ const MainScreen = () => {
               <p className="main__mini-text">Главная</p>
             </Fade>
             <Fade direction="up" delay={200} triggerOnce>
-              <h1 className="main__heading mt8">
-                <span className="main__span">
-                  <strong>Ваш представитель в </strong>
-                </span>
+              <h1 className="main__heading">
+                <span className="main__span">Ваш представитель в </span>
                 <strong>Павлодарской Области</strong>
               </h1>
             </Fade>
             <Fade direction="up" delay={300} triggerOnce>
-              <p className="main__paragraph mt32">
+              <p className="main__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
               </p>
             </Fade>
           </div>
-          <div className="main__buttons">
+          <div className="main__button">
             <Link smooth to="about">
               <Fade direction="up" delay={400} triggerOnce>
                 <ButtonMore text={"Подробнее"} className={"outline"} />

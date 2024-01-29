@@ -50,6 +50,7 @@
       &__text-s {
         display: flex;
         text-indent: clamp(20px, 2.0832vw, 80px);
+        margin-left: clamp(150px, 70.092vw, 600px);
       }
 
       &__text {
@@ -65,12 +66,10 @@
       &__button {
         background-color: $primary-color;
         border: none;
-        width: 300px;
+        width: clamp(130px, 13.5408vw, 520px);
         padding: clamp(7.5px, 0.7812vw, 30px);
         font-family: $secondary-font;
-        font-weight: 400;
-        font-size: clamp(9.5px, 4.439159999999999vw, 38px);
-        text-align: center;
+        font-size: clamp(5px, 2.3364vw, 20px);
         transition: 0.3s ease;
         color: $original-white;
         cursor: pointer;

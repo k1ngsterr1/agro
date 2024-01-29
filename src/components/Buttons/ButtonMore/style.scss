@@ -47,3 +47,22 @@
   background-color: $primary-color;
   color: $original-white;
 }
+
+@media screen and (min-width: 1024px) {
+  .outline {
+    width: clamp(130px, 13.5408vw, 520px);
+    padding: clamp(7px, 0.72912vw, 28px);
+    border: none;
+    font-family: $secondary-font;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    transition: 0.3s ease;
+    border: 2px solid $primary-color;
+    margin-top: clamp(16px, 1.66656vw, 64px);
+    font-size: clamp(10px, 1.0416vw, 40px);
+  }
+
+  .outline:hover {
+    background-color: $primary-color;
+    color: $original-white;
+  }
+}

@@ -32,6 +32,7 @@
     font-weight: 700;
     font-size: clamp(14px, 6.541919999999999vw, 56px);
     line-height: clamp(19.6px, 9.158688vw, 78.4px);
+    margin-top: clamp(4px, 1.86912vw, 16px);
   }
   &__span {
     color: $secondary-color;
@@ -42,11 +43,68 @@
     font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
     font-weight: 100;
     line-height: clamp(13.6px, 6.355008vw, 54.4px);
+    margin-top: clamp(16px, 7.47648vw, 64px);
   }
   &__field {
     margin-top: clamp(24px, 11.21472vw, 96px);
     height: clamp(200px, 93.45599999999999vw, 800px);
     background-size: cover;
-    background-repeat: no-repeat; /* Высота изображения равна высоте видимого экрана */
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    &__content {
+      width: 86.6%;
+    }
+
+    &__text-section {
+      text-align: left;
+      color: $primary-color;
+      font-family: $primary-font;
+    }
+
+    &__mini-text {
+      font-size: clamp(9px, 0.93744vw, 36px);
+      font-weight: 100;
+      color: $secondary-color;
+      cursor: pointer;
+    }
+
+    &__heading {
+      width: 60%;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $secondary-color;
+      font-size: clamp(32.5px, 3.3852vw, 130px);
+      line-height: clamp(40px, 4.1664vw, 160px);
+      margin-top: clamp(8px, 0.83328vw, 32px);
+    }
+    &__paragraph {
+      width: 36%;
+      color: $secondary-color;
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+      font-weight: 100;
+      line-height: clamp(21px, 2.18736vw, 84px);
+      margin-top: clamp(24px, 2.49984vw, 96px);
+    }
+
+    &__button {
+      display: flex;
+      justify-content: left;
+    }
+
+    &__field {
+      display: flex;
+      width: clamp(585px, 60.9336vw, 2340px);
+      height: clamp(395px, 41.1432vw, 1580px);
+      position: absolute;
+      left: clamp(375.5px, 39.11208vw, 1502px);
+      top: clamp(65px, 6.7704vw, 260px);
+      z-index: -1;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
