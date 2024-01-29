@@ -73,7 +73,7 @@
     &__input {
       text-align: left;
       color: #cbcbcb;
-      padding: clamp(9px, 0.93744vw, 36px);
+      padding: clamp(7.5px, 0.7812vw, 30px);
       font-family: $primary-font;
       font-size: clamp(10px, 1.0416vw, 40px);
       line-height: clamp(16px, 1.66656vw, 64px);
@@ -82,10 +82,12 @@
       border-top: none;
       transition: 0.3s ease;
       height: auto;
-      margin-right: clamp(20px, 2.0832vw, 80px);
+
+      &-container {
+        margin-right: clamp(20px, 2.0832vw, 80px);
+      }
       &-error {
         font-family: $primary-font;
-        font-weight: 400;
         font-size: clamp(7px, 0.72912vw, 28px);
         color: red;
       }
