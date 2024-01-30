@@ -53,10 +53,10 @@
 
 @media screen and (min-width: 1024px) {
   .services {
-    width: 86.6%;
     margin: auto;
     &__content {
       margin-top: clamp(64px, 6.66624vw, 256px);
+      width: 86.6%;
     }
     &__text-section {
       color: $secondary-color;
@@ -83,7 +83,7 @@
     }
     &__paragraph {
       position: relative;
-      left: clamp(522.5px, 54.4236vw, 2090px);
+      left: clamp(582.5px, 60.6732vw, 2330px);
       width: 30%;
       text-align: right;
       color: $secondary-color;

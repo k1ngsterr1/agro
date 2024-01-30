@@ -11,13 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px 35px;
+    margin: clamp(10px, 4.6728vw, 40px) clamp(17.5px, 8.177399999999999vw, 70px);
   }
   &__container-item {
     background-color: #fff;
     border: none;
     color: $secondary-color;
-    font-size: 37px;
+    font-size: clamp(12px, 5.60736vw, 48px);
     font-family: $primary-font;
     font-weight: 600;
     cursor: pointer;
@@ -29,9 +29,8 @@
 }
 
 .contact {
-  margin-top: 16px;
   &__item {
-    font-size: 24px;
+    font-size: clamp(8px, 3.73824vw, 32px);
     text-decoration: none;
     color: $primary-color;
     font-family: $primary-font;

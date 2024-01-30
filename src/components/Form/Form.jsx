@@ -21,44 +21,30 @@ const Form = () => {
     >
       <nav className="form__content">
         <div className="form__card">
-          <div className="form__input-container">
+          <div className="form__input-name">
             <input
               {...register("full_name", {
-                required: "Заполните ваше имя",
                 pattern: {
                   value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
-                  message: "Пожалуйста введите имя правильно",
                 },
               })}
               placeholder="Ваше имя"
               className="form__input"
               name="full_name"
-              isError={Boolean(errors.full_name)}
             />
-            {errors.full_name && (
-              <span className="form__input-error">
-                {errors.full_name.message}
-              </span>
-            )}
           </div>
-          <div className="form__input-container">
+          <div className="form__input-phone">
             <input
               {...register("phone_number", {
-                required: "Заполните ваш телефон",
                 pattern: {
                   value:
                     /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-                  message: "Пожалуйста введите номер телефона правильно",
                 },
               })}
               className="form__input"
               name="phone_number"
               placeholder="Ваш телефон"
-              isError={Boolean(errors.phone_number)}
             />
-            {errors.phone_number && (
-              <p className="form__input-error">{errors.phone_number.message}</p>
-            )}
           </div>
         </div>
         <div className="form__select-card">
@@ -86,15 +72,11 @@ const Form = () => {
             type="submit"
           />
         </Slide>
-        <div className="pc-btn">
-          <Slide direction="right" triggerOnce>
-            <ButtonMore
-              text={"Отправить"}
-              className={"basic-pc"}
-              type="submit"
-            />
-          </Slide>
-        </div>
+      </div>
+      <div className="pc-btn">
+        <Slide direction="right" triggerOnce>
+          <ButtonMore text={"Отправить"} className={"basic-pc"} type="submit" />
+        </Slide>
       </div>
     </form>
   );

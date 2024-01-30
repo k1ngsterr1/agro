@@ -48,7 +48,7 @@ function ConsultationScreen() {
           </Slide>
           <Slide
             direction="right"
-            className="consultation__contact mt32"
+            className="consultation__contact__number"
             triggerOnce
           >
             <a href="tel:+77764490449" className="consultation__contact">

@@ -61,7 +61,7 @@ const Menu = (props) => {
                 +7 (776) 449-04-49
               </a>
             </Slide>
-            <Slide direction="right" className="contact__item mt32">
+            <Slide direction="right" className="contact__item mt16">
               <a
                 href="mailto:specialsolutions@info.kz"
                 className="contact__item"

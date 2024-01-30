@@ -68,10 +68,10 @@
 
 @media screen and (min-width: 1024px) {
   .consultation {
-    width: 86.6%;
     margin: auto;
     margin-top: clamp(80px, 8.3328vw, 320px);
     &__content {
+      width: 86.6%;
       font-family: $primary-font;
       font-weight: 700;
       margin: auto;
@@ -92,7 +92,7 @@
       transition: 0.3s;
     }
     &__heading {
-      margin-top: clamp(8px, 0.83328vw, 32px);
+      margin-top: clamp(2px, 0.20832vw, 8px);
       font-weight: 700;
       font-size: clamp(24px, 2.49984vw, 96px);
       color: $primary-color;
@@ -102,37 +102,36 @@
     }
     &__paragraph {
       width: 30%;
-      margin-top: clamp(16px, 1.66656vw, 64px);
+      margin-top: clamp(12px, 1.24992vw, 48px);
       color: $secondary-color;
       font-size: clamp(10.5px, 1.09368vw, 42px);
       font-weight: 100;
       line-height: clamp(21px, 2.18736vw, 84px);
     }
-    &__button {
-      display: flex;
-      align-items: flex-start;
-    }
     &__contacts {
-      margin-top: 32px;
-      text-align: left;
+      position: relative;
+      bottom: clamp(470px, 48.9552vw, 1880px);
     }
     &__contact {
-      font-size: 24px;
+      font-size: clamp(10px, 1.0416vw, 40px);
       text-decoration: none;
       color: $primary-color;
       font-family: $primary-font;
       transition: 0.3s ease;
+      &__number {
+        margin-top: clamp(16px, 1.66656vw, 64px);
+      }
       &:hover {
         color: $secondary-color;
       }
     }
     .field-picture-pc {
       display: flex;
-      width: 860px;
-      height: 700px;
+      width: clamp(536px, 55.82976vw, 2144px);
+      height: clamp(405px, 42.1848vw, 1620px);
       position: relative;
-      left: 850px;
-      bottom: 755px;
+      left: clamp(361px, 37.60176vw, 1444px);
+      bottom: clamp(366px, 38.12256vw, 1464px);
     }
   }
 }
