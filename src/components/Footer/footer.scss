@@ -1,5 +1,13 @@
 @import "../../styles/variables.scss";
 
+.footer {
+  display: none;
+}
+
+.footer__sparklogo {
+  display: none;
+}
+
 footer {
   width: 100%;
   margin-top: clamp(32px, 14.95296vw, 128px);
@@ -52,4 +60,69 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer_m {
+    display: none;
+  }
+  .footer {
+    position: relative;
+    bottom: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: clamp(16px, 1.66656vw, 64px);
+    padding-top: clamp(16px, 1.66656vw, 64px);
+    &__logo {
+      width: clamp(69px, 7.1870400000000005vw, 276px);
+      height: clamp(47.495px, 4.9470792vw, 189.98px);
+      position: relative;
+      left: clamp(32px, 3.33312vw, 128px);
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+    }
+    &__text {
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+      text-indent: clamp(16px, 1.66656vw, 64px);
+      font-family: $primary-font;
+      color: $secondary-color;
+      font-size: clamp(10.5px, 1.09368vw, 42px);
+      font-weight: 400;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &__btn {
+      width: clamp(130px, 13.5408vw, 520px);
+      height: clamp(27.5px, 2.8644000000000003vw, 110px);
+      padding: clamp(7.5px, 0.7812vw, 30px);
+      background-color: $primary-color;
+      border: none;
+      color: $original-white;
+      font-family: $secondary-font;
+      font-size: clamp(10px, 1.0416vw, 40px);
+      position: relative;
+      left: clamp(160px, 16.6656vw, 640px);
+      &:hover {
+        background-color: #237e1f;
+      }
+    }
+    &__sparklogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      bottom: 900px;
+      overflow: hidden;
+      &-orange {
+        width: clamp(93.5px, 9.73896vw, 374px);
+        height: clamp(30.5px, 3.17688vw, 122px);
+      }
+    }
+  }
 }
