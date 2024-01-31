@@ -61,15 +61,17 @@
       color: $secondary-color;
     }
   }
-  .field-picture-pc {
+  &__picture {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .consultation {
+    width: 100%;
     margin: auto;
     margin-top: clamp(80px, 8.3328vw, 320px);
+    position: relative;
     &__content {
       width: 86.6%;
       font-family: $primary-font;
@@ -92,7 +94,7 @@
       transition: 0.3s;
     }
     &__heading {
-      margin-top: clamp(2px, 0.20832vw, 8px);
+      // margin-top: clamp(2px, 0.20832vw, 8px);
       font-weight: 700;
       font-size: clamp(24px, 2.49984vw, 96px);
       color: $primary-color;
@@ -102,15 +104,11 @@
     }
     &__paragraph {
       width: 30%;
-      margin-top: clamp(12px, 1.24992vw, 48px);
+      // margin-top: clamp(12px, 1.24992vw, 48px);
       color: $secondary-color;
       font-size: clamp(10.5px, 1.09368vw, 42px);
       font-weight: 100;
       line-height: clamp(21px, 2.18736vw, 84px);
-    }
-    &__contacts {
-      position: relative;
-      bottom: clamp(470px, 48.9552vw, 1880px);
     }
     &__contact {
       font-size: clamp(10px, 1.0416vw, 40px);
@@ -125,13 +123,14 @@
         color: $secondary-color;
       }
     }
-    .field-picture-pc {
+    &__picture {
       display: flex;
-      width: clamp(536px, 55.82976vw, 2144px);
-      height: clamp(405px, 42.1848vw, 1620px);
-      position: relative;
-      left: clamp(361px, 37.60176vw, 1444px);
-      bottom: clamp(366px, 38.12256vw, 1464px);
+      width: clamp(531.5px, 55.36104vw, 2126px);
+      height: clamp(395px, 41.1432vw, 1580px);
+      position: absolute;
+      right: 0;
+      top: clamp(0.1px, 0.010416000000000002vw, 0.4px);
+      z-index: -1;
     }
   }
 }

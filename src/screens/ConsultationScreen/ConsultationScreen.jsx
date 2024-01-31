@@ -1,6 +1,5 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
-import { Link } from "react-scroll";
 import "../ConsultationScreen/consultation.scss";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
@@ -32,18 +31,15 @@ function ConsultationScreen() {
         <Slide direction="right" triggerOnce>
           <Form></Form>
         </Slide>
-        <img src={Field} alt="" className="field-picture-pc" />
+        <img src={Field} alt="" className="consultation__picture" />
         <div className="consultation__contacts">
           <Slide
             direction="right"
             triggerOnce
-            className="consultation__contact mt64"
+            className="consultation__contact"
           >
-            <a
-              href="mailto:specialsolutions@info.kz"
-              className="consultation__contact"
-            >
-              specialsolutions@info.kz
+            <a href="mailto:ceo@agropv.kz" className="consultation__contact">
+              ceo@agropv.kz
             </a>
           </Slide>
           <Slide
@@ -51,8 +47,8 @@ function ConsultationScreen() {
             className="consultation__contact__number"
             triggerOnce
           >
-            <a href="tel:+77764490449" className="consultation__contact">
-              +7 (776) 449-04-49
+            <a href="tel:+77003333826" className="consultation__contact">
+              +7 (700) 333 38 26
             </a>
           </Slide>
         </div>

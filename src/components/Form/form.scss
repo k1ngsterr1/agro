@@ -51,6 +51,7 @@
 
 @media screen and (min-width: 1024px) {
   .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: clamp(16px, 1.66656vw, 64px);
@@ -84,6 +85,7 @@
     }
     &__select {
       width: 86%;
+      margin-top: clamp(-15px, -1.5624vw, -60px);
       text-align: left;
       color: #cbcbcb;
       padding: clamp(7.5px, 0.7812vw, 30px);
