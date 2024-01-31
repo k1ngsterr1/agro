@@ -11,6 +11,9 @@ import "./main.scss";
 import Field from "../../assets/agro.webp";
 
 const MainScreen = () => {
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
   const [isOpen, setIsOpen] = useState(false);
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -29,6 +32,7 @@ const MainScreen = () => {
 
   return (
     <section className="main-screen-mobile">
+      <Loader />
       <main className="main" id="main">
         <Header isOpen={isOpen} toggleMenu={toggleMenu} />
         {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}

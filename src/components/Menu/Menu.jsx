@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { Slide } from "react-awesome-reveal";
 import Hamburger from "hamburger-react";
-import { Link as ScrollLink, Link } from "react-scroll";
-import { Fade, Slide } from "react-awesome-reveal";
 import "./menu.scss";
 
 const Menu = (props) => {

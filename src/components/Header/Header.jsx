@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "..//../assets/logo.svg";
 import Hamburger from "hamburger-react";
+import Menu from "../Menu/Menu";
 import { Link } from "react-scroll";
-import ButtonCommunicate from "../Buttons/ButtonCommunicate/ButtonCommunicate";
 
 import "../Header/header.scss";
 
