@@ -30,7 +30,7 @@ const Header = (props) => {
               <Link smooth to="main">
                 <p className="header-pc__content__text">Главная</p>
               </Link>
-              <Link smooth to="about">
+              <Link smooth to="about-pc">
                 <p className="header-pc__content__text">О компании</p>
               </Link>
               <Link smooth to="services">

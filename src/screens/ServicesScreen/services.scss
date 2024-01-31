@@ -53,10 +53,11 @@
 
 @media screen and (min-width: 1024px) {
   .services {
+    width: 86.6%;
     margin: auto;
     &__content {
       margin-top: clamp(64px, 6.66624vw, 256px);
-      width: 86.6%;
+      position: relative;
     }
     &__text-section {
       color: $secondary-color;
@@ -76,6 +77,8 @@
     &__heading {
       font-weight: 700;
       font-size: clamp(24px, 2.49984vw, 96px);
+      line-height: clamp(32px, 3.33312vw, 128px);
+      margin-top: clamp(8px, 0.83328vw, 32px);
       color: $primary-color;
     }
     &__span {
@@ -83,14 +86,14 @@
     }
     &__paragraph {
       position: relative;
-      left: clamp(582.5px, 60.6732vw, 2330px);
+      left: clamp(522.5px, 54.4236vw, 2090px);
       width: 30%;
       text-align: right;
       color: $secondary-color;
       font-size: clamp(10.5px, 1.09368vw, 42px);
       font-weight: 100;
       line-height: clamp(21px, 2.18736vw, 84px);
-      bottom: clamp(16px, 1.66656vw, 64px);
+      margin-top: clamp(6px, 0.62496vw, 24px);
     }
     &__box {
       display: flex;

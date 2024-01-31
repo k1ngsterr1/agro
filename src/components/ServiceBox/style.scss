@@ -69,9 +69,7 @@
     margin-left: clamp(67.5px, 7.0308vw, 270px);
 
     .team-picture {
-      position: relative;
-      right: clamp(75px, 7.812vw, 300px);
-      bottom: clamp(10px, 1.0416vw, 40px);
+      font-size: 20px;
     }
     svg {
       position: relative;

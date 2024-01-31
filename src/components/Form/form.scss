@@ -103,8 +103,7 @@
     }
     .pc-btn {
       display: flex;
-      position: relative;
-      bottom: clamp(5px, 0.5208vw, 20px);
+      margin-top: -25px;
     }
   }
 }

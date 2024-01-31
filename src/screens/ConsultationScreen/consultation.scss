@@ -29,6 +29,7 @@
   }
   &__heading {
     width: 50%;
+    margin-top: clamp(4px, 1.86912vw, 16px);
     font-weight: 700;
     font-size: clamp(14px, 6.541919999999999vw, 56px);
     line-height: clamp(19.6px, 9.158688vw, 78.4px);
@@ -38,6 +39,7 @@
   }
   &__paragraph {
     width: 100%;
+    margin-top: clamp(8px, 3.73824vw, 32px);
     color: $secondary-color;
     font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
     font-weight: 100;
@@ -61,6 +63,10 @@
       color: $secondary-color;
     }
   }
+  &__contact__number {
+    margin-top: clamp(8px, 3.73824vw, 32px);
+  }
+
   &__picture {
     display: none;
   }
@@ -94,9 +100,10 @@
       transition: 0.3s;
     }
     &__heading {
-      // margin-top: clamp(2px, 0.20832vw, 8px);
       font-weight: 700;
       font-size: clamp(24px, 2.49984vw, 96px);
+      line-height: clamp(32px, 3.33312vw, 128px);
+      margin-top: clamp(8px, 0.83328vw, 32px);
       color: $primary-color;
     }
     &__span {
@@ -104,11 +111,15 @@
     }
     &__paragraph {
       width: 30%;
-      // margin-top: clamp(12px, 1.24992vw, 48px);
+      margin-top: clamp(6px, 0.62496vw, 24px);
       color: $secondary-color;
       font-size: clamp(10.5px, 1.09368vw, 42px);
       font-weight: 100;
       line-height: clamp(21px, 2.18736vw, 84px);
+    }
+
+    &__contacts {
+      margin-top: -55px;
     }
     &__contact {
       font-size: clamp(10px, 1.0416vw, 40px);
@@ -125,12 +136,12 @@
     }
     &__picture {
       display: flex;
-      width: clamp(531.5px, 55.36104vw, 2126px);
-      height: clamp(395px, 41.1432vw, 1580px);
       position: absolute;
       right: 0;
-      top: clamp(0.1px, 0.010416000000000002vw, 0.4px);
+      top: clamp(-4px, -0.41664vw, -16px);
       z-index: -1;
+      width: clamp(531.5px, 55.36104vw, 2126px);
+      height: clamp(375px, 39.06vw, 1500px);
     }
   }
 }

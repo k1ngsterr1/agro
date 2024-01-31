@@ -78,7 +78,9 @@
     width: 86.6%;
     margin: auto;
     &__content {
+      width: 100%;
       margin-top: clamp(182px, 18.95712vw, 728px);
+      position: relative;
 
       &__text-section {
         color: $secondary-color;
@@ -118,9 +120,9 @@
       &__button {
         display: flex;
         justify-content: right;
-        position: relative;
+        position: absolute;
         right: clamp(177.5px, 18.488400000000002vw, 710px);
-        bottom: clamp(127.5px, 13.2804vw, 510px);
+        bottom: clamp(100px, 10.416vw, 400px);
       }
       &__statistics {
         color: $secondary-color;
@@ -128,8 +130,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position: relative;
-        bottom: clamp(65px, 6.7704vw, 260px);
+        // margin-top: clamp(-95px, -9.8952vw, -380px);
       }
       &__number {
         color: $primary-color;
