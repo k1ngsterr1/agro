@@ -53,13 +53,13 @@ const Form = () => {
               Услуга
             </option>
             <option value="service2" className="form__select-option">
-              Орал
+              Услуга 1
             </option>
             <option value="service3" className="form__select-option">
-              Классика
+              Услуга 2
             </option>
             <option value="service4" className="form__select-option">
-              Анал
+              Услуга 3
             </option>
           </select>
         </div>
