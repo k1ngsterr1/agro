@@ -20,7 +20,6 @@ const Menu = (props) => {
               Главная
             </Link>
           </Slide>
-
           <Link
             onClick={props.closeMenu}
             className="aside__container-item mt32"

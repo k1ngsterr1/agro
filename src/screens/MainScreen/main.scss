@@ -53,6 +53,10 @@
   }
 }
 
+.main__button-pc {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .main {
     &__content {
@@ -91,8 +95,7 @@
     }
 
     &__button {
-      display: flex;
-      justify-content: left;
+      display: none;
     }
 
     &__field {
@@ -104,5 +107,9 @@
       top: clamp(65px, 6.7704vw, 260px);
       z-index: -1;
     }
+  }
+
+  .main__button-pc {
+    display: flex;
   }
 }

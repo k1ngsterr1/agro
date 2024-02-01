@@ -11,9 +11,6 @@ function AboutScreen() {
         <div className="about__content">
           <div className="about__content__text-section">
             <Slide direction="right" triggerOnce>
-              <p className="about__content__mini-text">О компании</p>
-            </Slide>
-            <Slide direction="right" triggerOnce>
               <h1 className="about__content__heading mt8">
                 <span className="about__content__span">
                   <strong>Огромный опыт на </strong>
@@ -73,29 +70,28 @@ function AboutScreen() {
           </div>
         </div>
       </div>
-
-      <div className="about-pc">
+      <div className="about-pc" id="about-pc">
         <div className="about-pc__content">
           <div className="about-pc__content__text-section">
-            <Fade direction="up" triggerOnce>
-              <p className="about-pc__content__mini-text">О компании</p>
-            </Fade>
             <Fade direction="up" triggerOnce>
               <h1 className="about-pc__content__heading">
                 <span>Огромный опыт </span>на сельскохозяйственных культур
               </h1>
             </Fade>
             <Fade direction="up" triggerOnce>
-              <p className="about-pc__content__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              <p className="about-pc__content__paragraph mt32-pc">
+                Компания «Agro Partners» зарекомендовала себя как честный,
+                ответственный исполнитель, что позволяет выстраивать грамотные
+                взаимоотношения с фермерскими хозяйствами, перевозчиками, а
+                также организациями, связанными с оформлением документов на
+                экспорт.
               </p>
             </Fade>
             <Fade direction="up" triggerOnce>
               <p className="about-pc__content__paragraph mt32-pc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                В условиях глобализации аграрного рынка, оперативность,
+                прозрачность и взаимное доверие являются ключевыми факторами
+                успешного сотрудничества.
               </p>
             </Fade>
           </div>

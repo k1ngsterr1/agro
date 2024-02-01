@@ -28,6 +28,7 @@ const Form = () => {
                   value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
                 },
               })}
+              required
               placeholder="Ваше имя"
               className="form__input"
               name="full_name"
@@ -41,6 +42,7 @@ const Form = () => {
                     /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
                 },
               })}
+              required
               className="form__input"
               name="phone_number"
               placeholder="Ваш телефон"
@@ -49,17 +51,14 @@ const Form = () => {
         </div>
         <div className="form__select-card">
           <select className="form__select">
-            <option value="service1" className="form__select-option">
-              Услуга
+            <option value="Сопровождение" className="form__select-option">
+              Сопровождение
             </option>
-            <option value="service2" className="form__select-option">
-              Орал
+            <option value="Поиск" className="form__select-option">
+              Поиск
             </option>
-            <option value="service3" className="form__select-option">
-              Классика
-            </option>
-            <option value="service4" className="form__select-option">
-              Анал
+            <option value="Комплекс" className="form__select-option">
+              Комплекс
             </option>
           </select>
         </div>

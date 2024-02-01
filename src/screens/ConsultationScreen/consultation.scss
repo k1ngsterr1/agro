@@ -54,7 +54,7 @@
     text-align: left;
   }
   &__contact {
-    font-size: 24px;
+    font-size: clamp(10.5px, 4.90644vw, 42px);
     text-decoration: none;
     color: $primary-color;
     font-family: $primary-font;

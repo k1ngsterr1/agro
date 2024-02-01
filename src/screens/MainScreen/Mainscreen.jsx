@@ -38,9 +38,6 @@ const MainScreen = () => {
         {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
         <div className="main__content">
           <div className="main__text-section">
-            <Fade direction="up" triggerOnce>
-              <p className="main__mini-text">Главная</p>
-            </Fade>
             <Fade direction="up" delay={200} triggerOnce>
               <h1 className="main__heading">
                 <span className="main__span">Ваш представитель в </span>
@@ -49,18 +46,24 @@ const MainScreen = () => {
             </Fade>
             <Fade direction="up" delay={300} triggerOnce>
               <p className="main__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                «AGRO PARTNERS» – группа специалистов, готовая помочь в поиске
+                решений по вопросам экспорта зерновых и масличных культур.
               </p>
             </Fade>
           </div>
           <div className="main__button">
-            <Link smooth to="about">
-              <Fade direction="up" delay={400} triggerOnce>
+            <Fade direction="up" delay={400} triggerOnce>
+              <Link smooth to="about">
                 <ButtonMore text={"Подробнее"} className={"outline"} />
-              </Fade>
-            </Link>
+              </Link>
+            </Fade>
+          </div>
+          <div className="main__button-pc">
+            <Fade direction="up" delay={400} triggerOnce>
+              <Link smooth to="about-pc">
+                <ButtonMore text={"Подробнее"} className={"outline"} />
+              </Link>
+            </Fade>
           </div>
         </div>
         <img src={Field} alt="icon" className="main__field" />

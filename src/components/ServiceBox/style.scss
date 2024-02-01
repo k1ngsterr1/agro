@@ -1,99 +1,110 @@
 @import "../../styles/variables.scss";
 
-.servicebox {
-  @extend %flex-center;
-  padding: 20px;
+.service_box {
+  width: clamp(169px, 78.97032vw, 676px);
+  height: clamp(156.5px, 73.12931999999999vw, 626px);
+  display: flex;
   flex-direction: column;
-  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.05);
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transition: 0.3s ease;
-  margin-top: clamp(16px, 7.47648vw, 64px);
+  transition: 0.3s all;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px 0px;
+  box-shadow: 0px 12px 35px 0px rgba(0, 0, 0, 0.05);
 
-  svg {
-    margin-top: clamp(14.965px, 6.9928452vw, 59.86px);
+  &__icon {
+    font-size: clamp(18px, 8.41104vw, 72px);
+    color: $primary-color;
   }
 
-  p {
-    margin-top: clamp(8.105px, 3.7873044vw, 32.42px);
+  &__heading {
     color: $secondary-color;
-    font-family: $primary-font;
-    font-weight: 700;
+    font-family: "Gotham Pro";
     font-size: clamp(11.5px, 5.37372vw, 46px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  dt {
-    width: 94%;
-    margin-top: clamp(6.485px, 3.0303108vw, 25.94px);
+
+  &__paragraph {
     color: $secondary-color;
     text-align: center;
-    line-height: clamp(10.2px, 4.766255999999999vw, 40.8px);
+    font-family: "Gotham Pro";
     font-size: clamp(7.5px, 3.5046vw, 30px);
-    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 136%;
   }
-  //   .team-picture {
-  //     width: clamp(22.5px, 10.5138vw, 90px);
-  //     margin-top: clamp(16.3px, 7.616664vw, 65.2px);
-  //   }
-}
 
-.servicebox:hover {
-  background-color: $primary-color;
+  &__button {
+    width: clamp(24px, 11.21472vw, 96px);
+    height: clamp(24px, 11.21472vw, 96px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: none;
+    color: $original-white;
+    background-color: $primary-color;
 
-  svg path {
-    fill: $original-white;
+    &__icon {
+      font-size: clamp(10.5px, 4.90644vw, 42px);
+    }
   }
-  p {
-    color: $original-white;
+
+  &:hover {
+    background-color: $primary-color;
   }
-  dt {
-    color: $original-white;
+
+  &:hover &__icon {
+    color: white;
   }
-  svg g circle {
-    fill: $original-white;
+
+  &:hover &__heading {
+    color: white;
   }
-  .arrow g path {
-    fill: $primary-color;
+
+  &:hover &__paragraph {
+    color: white;
+  }
+
+  &:hover &__button {
+    background-color: white;
+    color: $primary-color;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .servicebox {
+  .service_box {
     width: clamp(210px, 21.8736vw, 840px);
     height: clamp(168.5px, 17.55096vw, 674px);
+    display: flex;
     flex-direction: column;
-    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.05);
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: 0.3s ease;
-    margin-top: clamp(32px, 3.33312vw, 128px);
-    margin-left: clamp(67.5px, 7.0308vw, 270px);
+    align-items: flex-start;
+    cursor: pointer;
 
-    .team-picture {
-      font-size: 20px;
-    }
-    svg {
-      position: relative;
-      right: clamp(75px, 7.812vw, 300px);
-      margin-top: clamp(16px, 1.66656vw, 64px);
+    &__icon {
+      font-size: clamp(20.5px, 2.13528vw, 82px);
     }
 
-    p {
-      position: relative;
-      right: clamp(32px, 3.33312vw, 128px);
-      margin-top: clamp(12px, 1.24992vw, 48px);
-      color: $secondary-color;
-      font-family: $primary-font;
-      font-weight: 700;
+    &__heading {
       font-size: clamp(12.5px, 1.302vw, 50px);
     }
-    dt {
-      width: 90%;
+
+    &__paragraph {
+      font-size: clamp(8px, 0.83328vw, 32px);
       text-align: left;
-      margin-top: clamp(8px, 0.83328vw, 32px);
-      color: $secondary-color;
-      line-height: clamp(10.2px, 1.062432vw, 40.8px);
-      font-size: clamp(7.5px, 0.7812vw, 30px);
-      font-family: $primary-font;
+    }
+
+    &__button {
+      width: clamp(24px, 2.49984vw, 96px);
+      height: clamp(24px, 2.49984vw, 96px);
+      cursor: pointer;
+
+      &__icon {
+        font-size: clamp(8px, 0.83328vw, 32px);
+      }
     }
   }
 }

@@ -4,15 +4,17 @@ import { Link } from "react-scroll";
 import "../ServicesScreen/services.scss";
 import ServiceBox from "../../components/ServiceBox/ServiceBox";
 import teampicture from "../../assets/teampicture.svg";
+import {
+  faBorderAll,
+  faMagnifyingGlass,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 
 function ServicesScreen() {
   return (
     <div className="services" id="services">
       <div className="services__content">
         <div className="services__text-section">
-          <Slide direction="left" triggerOnce>
-            <p className="services__mini-text">Услуги</p>
-          </Slide>
           <Slide direction="left" triggerOnce>
             <h1 className="services__heading">
               <span className="services__span">
@@ -35,37 +37,37 @@ function ServicesScreen() {
                 text={
                   "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
                 }
-                svg={teampicture}
+                icon={faUserGroup}
                 caption={"Сопровождение"}
-                className={"servicebox"}
-              ></ServiceBox>
+                margin={"mt32"}
+              />
             </Fade>
           </div>
           <div className="service__box-item">
             <Fade direction="up" triggerOnce>
               <ServiceBox
                 text={
-                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                  "За 4 года активной работы мы наладили отношения с сотнями фермерских хозяйств, экспортировав более 400 000 тонн пшеницы."
                 }
-                svg={teampicture}
-                caption={"Сопровождение"}
-                className={"servicebox"}
-              ></ServiceBox>
+                icon={faMagnifyingGlass}
+                caption={"Поиск"}
+                margin={"mt32"}
+              />
             </Fade>
           </div>
           <div className="service__box-item">
             <Fade direction="up" delay={300} triggerOnce>
               <ServiceBox
                 text={
-                  "Официально представляем интересы Вашей компании, избавляя от необходимости личного участия в рабочих процессах. Мы готовы взять на себя координацию вопросов."
+                  "Комплексная услуга по поиску, а также юридическому, логистическому сопровождению контрактных отношений."
                 }
-                svg={teampicture}
+                icon={faBorderAll}
                 caption={"Сопровождение"}
-                className={"servicebox"}
-              ></ServiceBox>
+                margin={"mt32"}
+              />
             </Fade>
           </div>
-          <div className="service__box-odd">
+          {/* <div className="service__box-odd">
             <Fade direction="up" delay={400} triggerOnce>
               <ServiceBox
                 text={
@@ -76,7 +78,7 @@ function ServicesScreen() {
                 className={"servicebox"}
               ></ServiceBox>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

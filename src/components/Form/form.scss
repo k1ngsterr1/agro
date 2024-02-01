@@ -10,13 +10,24 @@
   width: 100%;
   height: auto;
 
+  &__content {
+    width: 100%;
+  }
+
+  &__card {
+    width: 100%;
+  }
+
+  &__input-name {
+    width: 100%;
+  }
+
   &__input,
   &__select {
-    width: 100%;
+    width: 100% !important;
     text-align: left;
     color: #cbcbcb;
     padding: clamp(5px, 2.3364vw, 20px);
-    width: clamp(150px, 70.092vw, 600px);
     margin-bottom: clamp(16px, 7.47648vw, 64px);
     font-family: $primary-font;
     font-size: clamp(10px, 4.6728vw, 40px);
@@ -57,13 +68,17 @@
     margin-top: clamp(16px, 1.66656vw, 64px);
     height: auto;
 
+    &__content {
+      width: 40%;
+    }
+
     &__card {
       display: flex;
       flex-direction: row;
     }
     &__input {
       text-align: left;
-      color: #cbcbcb;
+      color: #dedede;
       padding: clamp(7.5px, 0.7812vw, 30px);
       font-family: $primary-font;
       font-size: clamp(10px, 1.0416vw, 40px);
@@ -87,7 +102,7 @@
       width: 86%;
       margin-top: clamp(-15px, -1.5624vw, -60px);
       text-align: left;
-      color: #cbcbcb;
+      color: #222222;
       padding: clamp(7.5px, 0.7812vw, 30px);
       font-family: $primary-font;
       font-size: clamp(10px, 1.0416vw, 40px);
