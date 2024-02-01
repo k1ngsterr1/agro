@@ -58,7 +58,7 @@ const Menu = (props) => {
           <div className="contact mt64">
             <Slide direction="right">
               <a href="tel:+77764490449" className="contact__item">
-                +7 (776) 449-04-49
+                +7 (700) 333-38-26
               </a>
             </Slide>
             <Slide direction="right" className="contact__item mt16">
@@ -66,7 +66,7 @@ const Menu = (props) => {
                 href="mailto:specialsolutions@info.kz"
                 className="contact__item"
               >
-                specialsolutions@info.kz
+                ceo@agropv.kz
               </a>
             </Slide>
           </div>

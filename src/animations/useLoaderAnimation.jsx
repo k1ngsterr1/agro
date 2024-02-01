@@ -1,39 +1,29 @@
-import React from "react";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 
-export const useLoaderAnimation = () => {
-  const loaderRef = useRef < HTMLDivElement > null;
+const useLoaderAnimation = () => {
+  const loaderRef = useRef(null);
+
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (loaderRef.current) {
       const tl = gsap.timeline();
 
-      const isLoading = ({ loader }) => loader.isLoading;
-
       if (isLoading) {
         tl.to(loaderRef.current, {
-          y: 0,
-          duration: 0.5,
-          ease: "power3.inOut",
-        });
-      } else {
-        tl.to(loaderRef.current, {
-          y: 1500,
+          width: "100%", // Assuming loaderRef refers to the loader element
           duration: 0.5,
           ease: "power3.inOut",
         });
       }
     }
-  }, [loaderRef]);
+  }, [isLoading]);
 
-  return { loaderRef };
+  return {
+    loaderRef,
+    setIsLoading,
+  };
 };
 
-const LoaderComponent = () => {
-  const { loaderRef } = useLoaderAnimation();
-
-  return <div ref={loaderRef}></div>;
-};
-
-export default LoaderComponent;
+export default useLoaderAnimation;

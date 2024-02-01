@@ -48,7 +48,7 @@ function ConsultationScreen() {
             triggerOnce
           >
             <a href="tel:+77003333826" className="consultation__contact">
-              +7 (700) 333 38 26
+              +7 (700) 333-38-26
             </a>
           </Slide>
         </div>

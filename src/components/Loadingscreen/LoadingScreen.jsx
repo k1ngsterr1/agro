@@ -1,47 +1,42 @@
-import React from "react";
-// import Reveal from "react-awesome-reveal";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
 import "./loading.scss";
 import loaderlogo from "../../assets/loaderlogo.svg";
-import { useLoaderAnimation } from "../../animations/useLoaderAnimation";
-// import "../../styles/variables.scss";
+import "../../styles/variables.scss";
 
-function Loader() {
-  const { loaderRef } = useLoaderAnimation();
-
-  const [loading, setloading] = useState(false);
-  useEffect(() => {
-    setloading(true);
-    setTimeout(() => {
-      setloading(false);
-    }, 1500);
-  }, []);
+const Loader = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    setTimeout(() => {
-      document.body.style.overflow = "auto";
-      setloading(false);
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      setIsLoading(false);
+      document.body.classList.remove("no-scroll"); // Удаляем класс, чтобы включить скролл обратно
     }, 1500);
+    document.body.classList.add("no-scroll");
+    return () => {
+      clearTimeout(timer);
+      document.body.classList.remove("no-scroll");
+    };
   }, []);
 
-  return (
-    <div className="loader" useRef={loaderRef}>
-      <div className="loader__container">
-        <img src={loaderlogo} alt="icon" className="loader__logo" />
-        <BeatLoader
-          className="loader__beatloader mt70"
-          color={"white"}
-          loading={loading}
-          size={25}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
+  return isVisible ? (
+    <div>
+      <section className="loader-mobile">
+        <nav className="loader-mobile__container">
+          <img src={loaderlogo} alt="load" className="loader-mobile__img" />
+          <BeatLoader color="white" size="20" className="loader-mobile__dots" />
+        </nav>
+      </section>
+      <section className="loader-pc">
+        <nav className="loader-pc__container">
+          <img src={loaderlogo} alt="load" className="loader-pc__img" />
+          <BeatLoader color="white" size="30" className="loader-pc__dots" />
+        </nav>
+      </section>
     </div>
-  );
-}
+  ) : null;
+};
 
 export default Loader;
