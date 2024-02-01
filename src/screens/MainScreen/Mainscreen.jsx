@@ -13,12 +13,15 @@ import Field from "../../assets/agro.webp";
 const MainScreen = () => {
   const closeMenu = () => {
     setIsOpen(false);
+    console.log("ZHOPA");
   };
   const [isOpen, setIsOpen] = useState(false);
+
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
   useEffect(() => {
+    console.log(isOpen);
     if (isOpen) {
       document.body.style.overflowY = "hidden";
     } else {
@@ -35,7 +38,9 @@ const MainScreen = () => {
       <Loader />
       <main className="main" id="main">
         <Header isOpen={isOpen} toggleMenu={toggleMenu} />
-        {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
+        {isOpen && (
+          <Menu isOpen={isOpen} closeMenu={closeMenu} toggleMenu={toggleMenu} />
+        )}
         <div className="main__content">
           <div className="main__text-section">
             <Fade direction="up" delay={200} triggerOnce>

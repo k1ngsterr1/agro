@@ -4,14 +4,14 @@ import { Slide } from "react-awesome-reveal";
 import Hamburger from "hamburger-react";
 import "./menu.scss";
 
-const Menu = (props) => {
+const Menu = ({ closeMenu }) => {
   return (
     <Slide direction="right" duration={1000}>
       <aside className="aside">
         <div className="aside__container mt48">
           <Slide direction="right">
             <Link
-              onClick={props.closeMenu}
+              onClick={closeMenu}
               className="aside__container-item"
               smooth
               to="about"
@@ -21,7 +21,7 @@ const Menu = (props) => {
             </Link>
           </Slide>
           <Link
-            onClick={props.closeMenu}
+            onClick={closeMenu}
             className="aside__container-item mt32"
             smooth
             to="about"
@@ -31,29 +31,20 @@ const Menu = (props) => {
           </Link>
 
           <Link
-            onClick={props.closeMenu}
+            onClick={closeMenu}
             className="aside__container-item mt32"
             smooth
             to="services"
           >
             <Slide direction="right">Услуги</Slide>
           </Link>
-          <Slide direction="right">
-            <button
-              onClick={props.closeMenu}
-              className="aside__container-item mt32"
-            >
-              Портфолио
-            </button>
-          </Slide>
-          <Slide direction="right">
-            <button
-              onClick={props.closeMenu}
-              className="aside__container-item mt32"
-            >
-              <span className="aside__span"> Связаться с нами </span>
-            </button>
-          </Slide>
+          <Link
+            onClick={closeMenu}
+            to="consulation"
+            className="aside__container-item mt32"
+          >
+            <Slide direction="right">Связаться с нами</Slide>
+          </Link>
           <div className="contact mt64">
             <Slide direction="right">
               <a href="tel:+77764490449" className="contact__item">
