@@ -54,7 +54,7 @@ const Form = () => {
             <option value="Сопровождение" className="form__select-option">
               Сопровождение
             </option>
-            <option value="Сопровождение" className="form__select-option">
+            <option value="Поиск" className="form__select-option">
               Поиск
             </option>
             <option value="Комплекс" className="form__select-option">
