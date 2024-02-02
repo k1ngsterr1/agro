@@ -11,12 +11,12 @@ function AboutScreen() {
         <div className="about__content">
           <div className="about__content__text-section">
             <Slide direction="right" triggerOnce>
-              <h1 className="about__content__heading mt8">
+              <h2 className="about__content__heading mt8">
                 <span className="about__content__span">
                   <strong>Огромный опыт на </strong>
                 </span>
                 <strong>сельскохозяйственных культур</strong>
-              </h1>
+              </h2>
             </Slide>
             <Slide direction="right" triggerOnce>
               <p className="about__content__paragraph mt32">
@@ -74,9 +74,9 @@ function AboutScreen() {
         <div className="about-pc__content">
           <div className="about-pc__content__text-section">
             <Fade direction="up" triggerOnce>
-              <h1 className="about-pc__content__heading">
+              <h2 className="about-pc__content__heading">
                 <span>Огромный опыт </span>на сельскохозяйственных культур
-              </h1>
+              </h2>
             </Fade>
             <Fade direction="up" triggerOnce>
               <p className="about-pc__content__paragraph mt32-pc">
