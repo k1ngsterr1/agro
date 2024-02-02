@@ -4,11 +4,13 @@ import Mainscreen from "../screens/MainScreen/Mainscreen.jsx";
 import AboutScreen from "../screens/AboutScreen/AboutScreen.jsx";
 import ServicesScreen from "../screens/ServicesScreen/ServicesScreen.jsx";
 import ConsultationScreen from "../screens/ConsultationScreen/ConsultationScreen.jsx";
+import { ModalWindow } from "../components/ModalWindow/index.jsx";
 
 const HomePage = () => {
   return (
     <>
       <Mainscreen />
+      <ModalWindow />
       <AboutScreen />
       <ServicesScreen />
       <ConsultationScreen />

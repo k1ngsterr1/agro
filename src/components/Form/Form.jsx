@@ -1,47 +1,33 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import { Slide } from "react-awesome-reveal";
+import { useForm } from "react-hook-form";
 import ButtonMore from "../Buttons/ButtonMore/ButtonMore";
+import ButtonCommunicate from "../Buttons/ButtonCommunicate/ButtonCommunicate";
+import useSendEmail from "../../hooks/useSendEmail";
 
 import "../Form/form.scss";
-import ButtonCommunicate from "../Buttons/ButtonCommunicate/ButtonCommunicate";
 
 const Form = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { onSubmit } = useSendEmail();
+  const { handleSubmit, register } = useForm();
+  const handleFormSubmit = (data, e) => onSubmit(data, e);
+
   return (
-    <form
-      className="form"
-      onSubmit={handleSubmit((data) => {
-        console.log(data);
-      })}
-    >
+    <form className="form" onSubmit={handleSubmit(handleFormSubmit)}>
       <nav className="form__content">
         <div className="form__card">
           <div className="form__input-name">
             <input
-              {...register("full_name", {
-                pattern: {
-                  value: /^[A-Za-zА-Яа-яёЁ]+(\s[A-Za-zА-Яа-яёЁ]+)*$/,
-                },
-              })}
+              {...register("name")}
               required
               placeholder="Ваше имя"
               className="form__input"
-              name="full_name"
+              name="name"
             />
           </div>
           <div className="form__input-phone">
             <input
-              {...register("phone_number", {
-                pattern: {
-                  value:
-                    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
-                },
-              })}
+              {...register("phone_number")}
               required
               className="form__input"
               name="phone_number"
@@ -50,7 +36,11 @@ const Form = () => {
           </div>
         </div>
         <div className="form__select-card">
-          <select className="form__select">
+          <select
+            className="form__select"
+            {...register("service")}
+            name="service"
+          >
             <option value="Сопровождение" className="form__select-option">
               Сопровождение
             </option>
@@ -67,8 +57,8 @@ const Form = () => {
         <Slide direction="right" triggerOnce>
           <ButtonCommunicate
             text={"Отправить"}
+            type={"submit"}
             className={"basic"}
-            type="submit"
           />
         </Slide>
       </div>
