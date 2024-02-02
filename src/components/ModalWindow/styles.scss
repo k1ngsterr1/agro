@@ -12,8 +12,8 @@
 }
 
 .modal_window {
-  width: 700px;
-  height: 400px;
+  width: clamp(350px, 36.456vw, 1400px);
+  height: clamp(200px, 20.832vw, 800px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,5 +45,27 @@
     color: $secondary-color;
     margin-top: 16px;
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .modal_window {
+    width: 80%;
+    height: clamp(250px, 116.82vw, 1000px);
+    &__logo {
+      width: clamp(40px, 18.6912vw, 160px);
+      height: clamp(40px, 18.6912vw, 160px);
+    }
+
+    &__text {
+      font-size: clamp(14px, 6.541919999999999vw, 56px);
+      text-align: center;
+    }
+
+    &__sub_text {
+      width: 60%;
+      font-size: clamp(8px, 3.73824vw, 32px);
+      text-align: center;
+    }
   }
 }
