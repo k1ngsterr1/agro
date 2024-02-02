@@ -16,12 +16,12 @@ function ServicesScreen() {
       <div className="services__content">
         <div className="services__text-section">
           <Slide direction="left" triggerOnce>
-            <h1 className="services__heading">
+            <h3 className="services__heading">
               <span className="services__span">
                 <strong>Наши </strong>
               </span>
               <strong>Услуги</strong>
-            </h1>
+            </h3>
           </Slide>
           <Slide direction="left" triggerOnce>
             <p className="services__paragraph">

@@ -11,12 +11,12 @@ function ConsultationScreen() {
       <div className="consultation__content">
         <div className="consultation__text-section">
           <Slide direction="right" triggerOnce>
-            <h1 className="consultation__heading">
+            <h4 className="consultation__heading">
               <span className="consultation__span">
                 <strong>Получить </strong>
               </span>
               <strong>консультацию</strong>
-            </h1>
+            </h4>
           </Slide>
           <Slide direction="right" triggerOnce>
             <p className="consultation__paragraph">
