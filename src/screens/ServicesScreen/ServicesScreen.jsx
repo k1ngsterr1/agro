@@ -25,8 +25,8 @@ function ServicesScreen() {
           </Slide>
           <Slide direction="left" triggerOnce>
             <p className="services__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
+              С нами Вы получаете надежного партнера, готового предложить
+              комплексные решения для Вашего успеха в сельском хозяйстве.
             </p>
           </Slide>
         </div>
