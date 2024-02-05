@@ -34,27 +34,27 @@ function AboutScreen() {
           </div>
           <div className="about__content__statistics">
             <Slide direction="right" triggerOnce>
-              <dl className="about__content__number mt32">600</dl>
+              <dl className="about__content__number mt32">4</dl>
               <dt className="about__content__description mt8">
-                Lorem ipsum dolor sit amet,
+                Года на рынке{" "}
               </dt>
             </Slide>
             <Slide direction="right" triggerOnce>
-              <dl className="about__content__number mt32">600</dl>
+              <dl className="about__content__number mt32">400 000</dl>
               <dt className="about__content__description mt8">
-                Lorem ipsum dolor sit amet,
+                Тонн пшеницы отгруженно
               </dt>
             </Slide>
             <Slide direction="right" triggerOnce>
-              <dl className="about__content__number mt32">600</dl>
+              <dl className="about__content__number mt32">50 000</dl>
               <dt className="about__content__description mt8">
-                Lorem ipsum dolor sit amet,
+                Семян подсолнечника отгруженно
               </dt>
             </Slide>
             <Slide direction="right" triggerOnce>
-              <dl className="about__content__number mt32">600</dl>
+              <dl className="about__content__number mt32">100</dl>
               <dt className="about__content__description mt8">
-                Lorem ipsum dolor sit amet,
+                Крестьянских хозяйств работают с нами
               </dt>
             </Slide>
           </div>
@@ -108,33 +108,33 @@ function AboutScreen() {
           <div className="about-pc__content__statistics">
             <Slide direction="left" triggerOnce>
               <div className="about-pc__content__statistics-item">
-                <dl className="about-pc__content__number">600</dl>
+                <dl className="about-pc__content__number">4</dl>
                 <dt className="about-pc__content__description">
-                  Lorem ipsum dolor sit amet,
+                  Года на рынке
                 </dt>
               </div>
             </Slide>
             <Slide direction="left" triggerOnce>
               <div className="about-pc__content__statistics-item">
-                <dl className="about-pc__content__number">600</dl>
+                <dl className="about-pc__content__number">400 000</dl>
                 <dt className="about-pc__content__description">
-                  Lorem ipsum dolor sit amet,
+                  Тонн пшеницы отгруженно
                 </dt>
               </div>
             </Slide>
             <Slide direction="left" triggerOnce>
               <div className="about-pc__content__statistics-item">
-                <dl className="about-pc__content__number">600</dl>
+                <dl className="about-pc__content__number"> 50 000 </dl>
                 <dt className="about-pc__content__description">
-                  Lorem ipsum dolor sit amet,
+                  Тонн семян подсолнечника отгруженно
                 </dt>
               </div>
             </Slide>
             <Slide direction="left" triggerOnce>
               <div className="about-pc__content__statistics-item">
-                <dl className="about-pc__content__number">600</dl>
+                <dl className="about-pc__content__number">100</dl>
                 <dt className="about-pc__content__description">
-                  Lorem ipsum dolor sit amet,
+                  Крестьянских хозяйств работают с нами
                 </dt>
               </div>
             </Slide>

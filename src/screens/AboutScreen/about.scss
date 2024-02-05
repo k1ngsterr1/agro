@@ -138,6 +138,7 @@
         font-size: clamp(22.5px, 2.3436vw, 90px);
       }
       &__description {
+        width: 100%;
         font-weight: 400;
         font-size: clamp(9px, 0.93744vw, 36px);
         margin-top: clamp(4px, 0.41664vw, 16px);
