@@ -1,9 +1,10 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
-import "../ConsultationScreen/consultation.scss";
 import Footer from "../../components/Footer/Footer";
 import Form from "../../components/Form/Form";
-import Field from "../../assets/agro.webp";
+import Field from "../../assets/wheat_form.webp";
+
+import "../ConsultationScreen/consultation.scss";
 
 function ConsultationScreen() {
   return (
@@ -20,8 +21,9 @@ function ConsultationScreen() {
           </Slide>
           <Slide direction="right" triggerOnce>
             <p className="consultation__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna
+              В мире агробизнеса каждая деталь имеет значение. "Agro Partners
+              PV" предлагает вам своё экспертное мнение в области экспорта
+              пшеничных и масличных культур.
             </p>
           </Slide>
         </div>

@@ -8,7 +8,7 @@ import Loader from "../../components/Loadingscreen/LoadingScreen.jsx";
 import ButtonMore from "../../components/Buttons/ButtonMore/ButtonMore.jsx";
 import "./main.scss";
 
-import Field from "../../assets/agro.webp";
+import Field from "../../assets/wheat_main.webp";
 
 const MainScreen = () => {
   const closeMenu = () => {
