@@ -20,15 +20,18 @@ function AboutScreen() {
             </Slide>
             <Slide direction="right" triggerOnce>
               <p className="about__content__paragraph mt32">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                Компания «Agro Partners» зарекомендовала себя как честный,
+                ответственный исполнитель, что позволяет выстраивать грамотные
+                взаимоотношения с фермерскими хозяйствами, перевозчиками, а
+                также организациями, связанными с оформлением документов на
+                экспорт.
               </p>
             </Slide>
             <Slide direction="right" triggerOnce>
               <p className="about__content__paragraph mt16">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                В условиях глобализации аграрного рынка, оперативность,
+                прозрачность и взаимное доверие являются ключевыми факторами
+                успешного сотрудничества.
               </p>
             </Slide>
           </div>
