@@ -15,7 +15,7 @@ function AboutScreen() {
                 <span className="about__content__span">
                   <strong>Огромный опыт на </strong>
                 </span>
-                <strong>сельскохозяйственных культур</strong>
+                <strong>в сфере сельскохозяйственных культур</strong>
               </h2>
             </Slide>
             <Slide direction="right" triggerOnce>
@@ -78,7 +78,7 @@ function AboutScreen() {
           <div className="about-pc__content__text-section">
             <Fade direction="up" triggerOnce>
               <h2 className="about-pc__content__heading">
-                <span>Огромный опыт </span>на сельскохозяйственных культур
+                <span>Огромный опыт </span>в сфере сельскохозяйственных культур
               </h2>
             </Fade>
             <Fade direction="up" triggerOnce>
