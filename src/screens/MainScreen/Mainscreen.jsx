@@ -51,8 +51,9 @@ const MainScreen = () => {
             </Fade>
             <Fade direction="up" delay={300} triggerOnce>
               <p className="main__paragraph">
-                «AGRO PARTNERS» – группа специалистов, готовая помочь в поиске
-                решений по вопросам экспорта зерновых и масличных культур.
+                «AGRO PARTNERS PV» – группа специалистов, готовая помочь в
+                поиске решений по вопросам экспорта зерновых и масличных
+                культур.
               </p>
             </Fade>
           </div>
